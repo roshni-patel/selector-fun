@@ -13,7 +13,7 @@ header, footer {
 
 /* All text to Helvetica */
 body {
-   font-family: 'Roboto Slab', serif;
+   font-family: 'Helveltica';
 }
 
 /* All links default color is gray*/
@@ -91,6 +91,7 @@ article img:nth-of-type(1) {
 main > section:last-child {
    background-color: brown;
 }
+
 /* Every other Article's Post-Content Background Color to a Light Grey */
 article:nth-child(odd) {
    background-color: lightgrey;
@@ -109,9 +110,11 @@ main h3::before {
 }
 
 /* Top-most Top Cat has a trophy emoji before name */
-#top-cats section:nth-of-type(1)::before {
+#top-cats section:first-of-type h3::before {
    content: "🏆";
 }
 
 /* Use Google Fonts to change h1 & h2 fonts to Roboto Slab */
-/* done in HTML file, see line 7 */
+h1, h2 {
+   font-family: 'Roboto Slab', serif;
+}
