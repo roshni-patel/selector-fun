@@ -2,67 +2,116 @@
 
 
 /* Give the header element a background color */
-
+header {
+   background-color: skyblue;
+}
 
 /* Center everything in the header and footer */
-
+header, footer {
+   text-align: center;
+}
 
 /* All text to Helvetica */
-
+body {
+   font-family: 'Roboto Slab', serif;
+}
 
 /* All links default color is gray*/
-
+a {
+   color: gray;
+}
 
 /* All links on hover color red*/
-
+a:hover {
+   color: red;
+}
 
 /* All Links visted color black*/
-
+a:visited {
+   color: black;
+}
 
 /* Footer disclaimer text to be .5 em*/
-
+footer {
+   font-size: .5em;
+}
 
 /* Remove bullet points from header navigation links */
-
+header li {
+   list-style-type: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
+article a {
+   color: orange;
+   text-decoration: none;
+   font-style: italic;
 
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+article p a:hover {
+   text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+article h3 a {
+   color: blue;
+   font-style: bold;
+}
 
 /* Article Paragraph Text should have line height of 200% */
-
+article p {
+   line-height: 200%;
+}
 
 /* The First Letter of each Article be 2em */
-
+article::first-letter {
+   font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article img:nth-of-type(1) {
+   border-radius: 25px;
+}
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-
+#top-cats section:nth-of-type(1) {
+   background-color: goldenrod;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
+#top-cats section:nth-of-type(2) {
+   background-color: silver;
+}
 
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background
    Note: the HTML for this one is a little odd! This is intentional! */
 
+main > section:last-child {
+   background-color: brown;
+}
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+article:nth-child(odd) {
+   background-color: lightgrey;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+#top-cats img {
+   border-radius: 25px;
+}
 
 /*** BONUS ***/
 
 /* Add a cat emoji before a Cat's Name (in the heading content)*/
-
+main h3::before {
+   content: "🐱";
+}
 
 /* Top-most Top Cat has a trophy emoji before name */
-
+#top-cats section:nth-of-type(1)::before {
+   content: "🏆";
+}
 
 /* Use Google Fonts to change h1 & h2 fonts to Roboto Slab */
+/* done in HTML file, see line 7 */
